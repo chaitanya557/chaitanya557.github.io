@@ -32,75 +32,22 @@
                 <a class="nav-link ml-5" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
+                <a class="nav-link ml-5" href="#signup">signup</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link ml-5" href="#about">About</a>
             </li>
-            <li class="nav-item ml-5">
-                <a class="nav-link" href="#contact">Contact</a>
+            <li class="nav-item">
+                <a class="nav-link ml-5" href="#contact">Contact</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 my-sm-2" type="text" placeholder="UserName">
-            <input class="form-control mr-sm-2 my-sm-2" type="password" placeholder="Password">
-            <button class="btn btn-success mr-sm-2 my-2 my-sm-1" type="submit" id="login">Login</button>
-            <div class="btn-group dropleft">
-                <button class="btn btn-danger dropdown-toggle mr-sm-2 my-2 my-sm-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="submit">sign up</button>
-                <div class="dropdown-menu mt-5 bg-primary">
-                    <table style="width:30%" class="mx-auto">
-                    <form method="post" action="signup.php">
-                            <tr class="dropdown-item bg-primary">
-                                <td><input type="text" name="name" placeholder="Enter your name" class=" form-control mt-5"></td>
-                            </tr>
-                            <tr class="dropdown-item bg-primary">
-                                <td><input type="email" name="email" placeholder="Email Id" class="form-control mt-5"></td>
-                                <td><input type="password" name="password" placeholder="Password" class=" form-control mt-5"></td>
-                            </tr>
-                            <tr class="dropdown-item bg-primary">
-                                <td><input type="number" name="number" placeholder="Mobile Number" class="form-control mt-5"></td>
-                                <td><input type="date" name="date" class="form-control mt-5"></td>
-                            </tr>
-                            <tr class="dropdown-item bg-primary">
-                                <td class="text-white"><input type="radio" name="gender" class="mt-5">Male
-                                    <input type="radio" name="gender" class="mt-5">Female</td>
-                            </tr>
-                            <tr class="dropdown-item bg-primary">
-                                <td><input type="submit" name="register" value="Sign Up" class="btn btn-success"></td>
-                                <td><input type="reset" name="cancel" value="Reset" class="btn btn-danger"></td>
-                            </tr>
-                    </form>
-                    </table>
-                </div>
-            </div>
+        <form class="form-inline">
+            <input class="form-control" type="text" placeholder="UserName">
+            <input class="form-control" type="password" placeholder="Password">
+            <button class="btn btn-success" type="submit">Login</button>
         </form>
     </div>
 </nav>
-
-<!--signup-->
-<div class="collapse form mt-5 bg-primary col-sm-12" id="form">
-    <form>
-        <table style="width:30%;" class="mx-auto">
-            <tr>
-                <td><input type="text" name="name" placeholder="Enter your name" class=" form-control mt-5"></td>
-            </tr>
-            <tr>
-                <td><input type="email" name="email" placeholder="Email Id" class="form-control mt-5"></td>
-                <td><input type="password" name="password" placeholder="Password" class=" form-control mt-5"></td>
-            </tr>
-            <tr>
-                <td><input type="number" name="number" placeholder="Mobile Number" class="form-control mt-5"></td>
-                <td><input type="date" name="date" class="form-control mt-5"></td>
-            </tr>
-            <tr>
-                <td class="text-white"><input type="radio" name="gender" class=" mt-5">Male
-                    <input type="radio" name="gender" class="mt-5">Female</td>>
-            </tr>
-            <tr>
-                <td><input type="submit" name="register" value="Sign Up" class="btn btn-success"></td>
-                <td><input type="reset" name="cancel" value="Reset" class="btn btn-danger"></td>
-            </tr>
-        </table>
-    </form>
-</div>
-
 
 <!--carousel -->
 <div class="container-fluid">
@@ -134,15 +81,43 @@
 </div>
 </div>
 
+<!--signup-->
+<div class="bg-primary" id="signup">
+    <h3 class="bg-danger mt-5">signup</h3>
+    <table class="m-auto mt-5">
+        <form method="post" action="signup.php">
+            <tr>
+                <td><input type="text" name="name" placeholder="Enter your name" class=" form-control mt-5"></td>
+            </tr>
+            <tr>
+                <td><input type="email" name="email" placeholder="Email Id" class="form-control mt-5"></td>
+                <td><input type="password" name="password" placeholder="Password" class=" form-control mt-5"></td>
+            </tr>
+            <tr>
+                <td><input type="number" name="number" placeholder="Mobile Number" class="form-control mt-5"></td>
+                <td><input type="date" name="date" class="form-control mt-5"></td>
+            </tr>
+            <tr>
+                <td class="text-white"><input type="radio" name="gender" class="mt-5">Male
+                    <input type="radio" name="gender" class="mt-5">Female</td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="register" value="Sign Up" class="btn btn-success"></td>
+                <td><input type="reset" name="cancel" value="Reset" class="btn btn-danger"></td>
+            </tr>
+        </form>
+    </table>
+</div>
+
 
 <!--About -->
 <div class="about mt-5" style="width:100%" id="about">
     <div class="row">
-    <div class="col-sm-12 col-md-6 mt-5">
+    <div class="col-md-6 mt-5">
                 <h3 class="bg-primary mt-5">About</h3>
                     <p><img src="img/websitelogo.png" width="50px" height="20px" id="image">HOLA Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto atque culpa ea est excepturi explicabo in labore maiores nam necessitatibus nihil nisi perspiciatis, placeat praesentium provident, quae quasi soluta suscipit voluptatum? A aliquam culpa dolorum, fugiat hic, impedit iusto natus necessitatibus perferendis quis, sed voluptatibus! Accusantium atque dolor nemo.</p>
     </div>
-    <div class="col-md-6 pl-5">
+    <div class="col-md-6 ">
                 <img src="img/gallery.jpg" width="550px" height="350px">
     </div>
     </div>
@@ -153,17 +128,20 @@
 <div class="footer">
     <div class="container">
         <div class="row">
-<div class="contact mt-5" id="contact">
-    <h3 class="bg-primary col-sm-12">Contact</h3>
-    <h5 class="col-sm-12">Contact us by below details</h5>
+<div class="contact col-sm-12 mt-5" id="contact">
+    <h3 class="bg-primary">Contact</h3>
+    <h5 class="">Contact us by below details</h5>
 </div>
-    <div class="map_directions col-md-12 col-sm-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.139604663826!2d78.44357911435416!3d17.453031005503615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90e96dcfc623%3A0xd33809be496372a!2s576%2C+SRT+St%2C+Subhash+Nagar%2C+Sriram+Nagar%2C+Tulasi+Nagar%2C+Sanath+Nagar%2C+Hyderabad%2C+Telangana+500038!5e0!3m2!1sen!2sin!4v1541598310219" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    <div class="map_directions col-md-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.139604663826!2d78.44357911435416!3d17.453031005503615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90e96dcfc623%3A0xd33809be496372a!2s576%2C+SRT+St%2C+Subhash+Nagar%2C+Sriram+Nagar%2C+Tulasi+Nagar%2C+Sanath+Nagar%2C+Hyderabad%2C+Telangana+500038!5e0!3m2!1sen!2sin!4v1541598310219" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe></div>
         </div>
     </div>
-    <div class="container">
-            <div class="row">
-    <div class="details col-sm-12 text-center">
-        <p>Email id:chaitanya0557@gmail.com <span style="margin-left: 50px;">contact number:9573706229</span></p>
+
+
+   <div class="container">
+       <div class="row">
+    <div class="details text-center m-auto">
+        <p>Email id:chaitanya0557@gmail.com</p>
+        <p> contact number:9573706229</p>
     </div>
         </div>
     </div>
@@ -174,16 +152,9 @@
 <div class="footer-bottom bg-primary text-white p-3">
     <div class="container">
         <div class="row">
-        <div class="col-sm-12 col-md-7">
+        <div class="col-sm-12 text-center">
             <span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> HOLA </span>
         </div>
-        <div class="footer-menu col-sm-12 col-md-5">
-                <ul type="none">
-                    <li><a href="#" class="pl-5">Home</a></li>
-                    <li><a href="#about" class="pl-5">About</a></li>
-                    <li><a href="#contact" class="pl-5">Contact</a></li>
-                </ul>
-            </div>
         </div>
     </div>
 </div>
