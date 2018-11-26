@@ -1,3 +1,5 @@
+<?php
 if(isset($_POST['register'])){
-	echo "Welcome";
+	echo "The work in process";
 }
+?>
